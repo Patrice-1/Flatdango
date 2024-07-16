@@ -4,7 +4,7 @@ fetch("http://localhost:3000/films")
     .then((data)=>{
 
         data.forEach((films)=>{
-        console.log(data);
+        console.log(`http://localhost:3000`);
         });
     });
 
