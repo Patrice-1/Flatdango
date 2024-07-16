@@ -3,8 +3,8 @@ fetch("http://localhost:3000/films")
     .then((response) => response.json())
     .then((data)=>{
 
-        data.forEach((films)=>{
-        console.log(`http://localhost:3000`);
+        data.forEach((data)=>{
+        console.log(data);
         });
     });
 
