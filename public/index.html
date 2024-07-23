@@ -7,125 +7,256 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <section class="p-2">
-    <nav class="bg-blue-500 h-20 text-balance flex-items-center">
-       <div class="justify-between items-center flex h-full">
-         <div class="px-5 logo">
-            <span class="flex">
-                 <img src="./images/pexels-adonyi-foto-1558916.jpg" alt="Flatdango Logo" class="h-10 w-10 ml-2">
-                 <h1 class="text-4xl font-bold  mx-5">Flatdango</h1>
-            </span>
+
+    <header>
+      <nav class="bg-blue-500 h-24 text-balance flex-items-center" id="nav-list">
+         <div class="justify-between items-center flex h-full" id="nav-btn">
+              <div>
+                 <span class="flex">
+                    <img src="./images/pexels-adonyi-foto-1558916.jpg" alt="Flatdango Logo" class="h-20 w-24 ml-2">
+                    <h1 class="text-4xl font-bold  mx-5">Flatdango</h1>
+                 </span>
             
-        </div class="nav_btn" id="nav-btn">
-        <ul class="flex justify-end items-center p-8 gap-4">
-        <li><a href="#home" class="text-white hover:text-red-700" id="home-btn">Home</a></li>
-        <li><a href="http://localhost:3000/films" class="text-white hover:text-red-700" id="movies-btn">Movies</a></li>
+              </div>
+              <ul class="flex justify-end items-center p-8 gap-4">
+                  <li><a href="#home" class="text-white hover:text-red-700" id="home-btn">Home</a></li>
+                  <li><a href="#movies" class="text-white hover:text-red-700" id="movies-btn">Movies</a></li>
     
-        </ul>
-       </div>
-    </nav>
+              </ul>
+         </div>
+      </nav>
+    </header>
 
-    <div>
+    <section class="bg-[url('./images/pexels-adonyi-foto-1558916.jpg')] bg-cover h-auto">
 
-    </div>
-    </section>
-
-    <section class="bg-[url('./images/pexels-adonyi-foto-1558916.jpg')] bg-cover h-auto mx-2 " id="sec1">
-
-        <div class="mx-10 h-auto bg-lightgray-500" id="container2">
+        <div class="h-auto bg-lightgray-500" id="movie-list">
             <div class="grid grid-cols-3 gap-10 border-spacing-2 p-8 text-purple-500">
 
 
                 <div class="bg-black flex p-6 flex-col items-center h-100 border-2">
 
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/2157/p2157_v_v8_ab.jpg " class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-3" id="title">The Giant Monster</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/1">Buy Ticket </a><span>
-
+                    <h2 class="title">The Giant Monster</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 108</h3>
+                       <h3 class="mb-2">Capacity: 30</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 4.00PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >3</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">A giant lizard terrorizes a rural Texas community and a heroic teenager attempts to destroy the creature.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/47781/p47781_v_v8_ac.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">Manos: The Hands Of Fate</p>
-                    <span class="hover:text-blue-500" id="sell"><a href="http://localhost:3000/films/2">Buy Ticket </a><span>
+                    <h2 class="title">Manos: The Hands Of Fate</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 118</h3>
+                       <h3 class="mb-2">Capacity: 50</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 06.45PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >6</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">A family gets lost on the road and stumbles upon a hidden, underground, devil-worshiping cult led by the fearsome Master and his servant Torgo.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/23342/p23342_v_v8_ab.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">Time Chasers</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/3">Buy Ticket </a><span>
+                    <h2 class="title">Time Chasers</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 93</h3>
+                       <h3 class="mb-2">Capacity: 50</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 09.30PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >19</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">An inventor comes up with a time machine, but must prevent its abuse at the hands of an evil C.E.O.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/43468/p43468_v_v8_aa.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">The Touch Of Satan</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/4">Buy Ticket </a><span>
+                    <h2 class="title">The Touch Of Satan</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 101</h3>
+                       <h3 class="mb-2">Capacity: 40</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 09.00PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >9</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">A young man meets a farm girl who is actually a witch.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/4232/p4232_v_v8_aa.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">Santa Claus Conquers The Martians</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/5">Buy Ticket </a><span>
+                    <h2 class="title">Santa Claus Conquers The Martians</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 96</h3>
+                       <h3 class="mb-2">Capacity: 50</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 03.30PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >5</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">The Martians kidnap Santa Claus because there is nobody on Mars to give their children presents.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/39804/p39804_v_v8_ab.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">Track Of The Moon Beast</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/6">Buy Ticket </a><span>
+                    <h2 class="title">Track Of The Moon Beast</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 112</h3>
+                       <h3 class="mb-2">Capacity: 30</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 10.30PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >14</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">A young man is transformed into a hideous 'moon beast' due to a meteor fragment lodged in his body.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/40518/p40518_v_v8_aa.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">The Skydivers</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/7">Buy Ticket </a><span>
+                    <h2 class="title">The Skydivers</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 94</h3>
+                       <h3 class="mb-2">Capacity: 30</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 07.30PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >8</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">A woman seeks revenge on her former lover, who owns a skydiving business.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/1466/p1466_v_v8_ab.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">The Killer Shrews</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/8">Buy Ticket </a><span>
+                    <h2 class="title">The Killer Shrews</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 115</h3>
+                       <h3 class="mb-2">Capacity: 40</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 08.30PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >8</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">On an isolated island, a small group of people are terrorized by giant voracious shrews in the midst of a hurricane.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/46755/p46755_v_v8_aa.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">Project Moon Base</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/9">Buy Ticket </a><span>
+                    <h2 class="title">Project Moon Base</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 99</h3>
+                       <h3 class="mb-2">Capacity: 40</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 07.30PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >18</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">A saboteur posing as a scientist strives to destroy the world's first space station.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/42171/p42171_v_v8_ab.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">The Giant Spider Invasion</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/10">Buy Ticket </a><span>
+                    <h2 class="title">The Giant Spider Invasion</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 122</h3>
+                       <h3 class="mb-2">Capacity: 50</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 10.00PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >6</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">Giant spiders from another dimension invade Wisconsin.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/58122/p58122_v_v8_aa.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">Catalina Caper</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/11">Buy Ticket </a><span>
+                    <h2 class="title">Catalina Caper</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 104</h3>
+                       <h3 class="mb-2">Capacity: 30</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 06.00PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >18</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">A group of swingin' teens take time out from having fun in the sun to try to foil a group of crooks searching for a stolen scroll.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/93417/p93417_v_v8_aa.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">Secret Agent Super Dragon</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/12">Buy Ticket </a><span>
+                    <h2 class="title">Secret Agent Super Dragon</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 104</h3>
+                       <h3 class="mb-2">Capacity: 30</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 07.00PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >10</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">A series of murders in Michigan lead an American secret agent to Amsterdam, where he uncovers a plot to imperil the world with a potent new drug.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/45367/p45367_v_v8_aa.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">Wild Rebels</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/13">Buy Ticket </a><span>
+                    <h2 class="title">Wild Rebels</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 100</h3>
+                       <h3 class="mb-2">Capacity: 40</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 09.00PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >9</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">A stock car driver goes undercover as the wheel man for a motorcycle gang.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/11850/p11850_v_v8_aa.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">Danger: Diabolik</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/14">Buy Ticket </a><span>
+                    <h2 class="title">Danger: Diabolik</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 111</h3>
+                       <h3 class="mb-2">Capacity: 50</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 08.00PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >10</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">International man of mystery Diabolik and his lover pull off heist after heist, all while European cops led by Inspector Ginko and envious mobsters led by Ralph Valmont are closing in on them.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
                 <div class="bg-black border-2 flex p-6 flex-col items-centre h-100">
                     <img src="https://www.gstatic.com/tv/thumb/v22vodart/37991/p37991_v_v8_aa.jpg" class="w-40 h-28" alt="">
-                    <p class="mt-2 mb-2" id="title">Village Of The Giants</p>
-                    <span id="sell" class="hover:text-blue-500"><a href="http://localhost:3000/films/15">Buy Ticket </a><span>
+                    <h2 class="title">Village Of The Giants</h2>
+                    <div class="text-white">
+                       <h3 class="mt-2 mb-2">Runtime: 98</h3>
+                       <h3 class="mb-2">Capacity: 50</h3>
+                       <h3 class="mb-2" id="show-time">Showtime: 04.45PM</h3>
+                       <h3 class="available-tickets">Available Tickets: <span >17</span></h3> 
+                    </div>
+                       <p class="mt-2 mb-2 text-purple-600">Delinquent teen-agers ingest a substance and grow thirty feet tall, then proceed to take over a small town.</p>
+                    <div class="text-white hover:text-blue-500">
+                       <button type="button" class="buy-ticket">Buy Ticket</button>
+                    </div>
                 </div>
 
 
